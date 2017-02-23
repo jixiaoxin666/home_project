@@ -1,0 +1,2 @@
+$("#message-list").html('<%= j(render :partial=>"list", :locals=>{:@messages => @messages})%>')
+$(".message-form input,textarea").val("");
