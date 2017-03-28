@@ -4,7 +4,7 @@
       <div class="user-img"><i class="fa fa-user  fa-2x"></i></div>
       <div class="item-wrapper">
         <p class="item-name"><%= item.user_name%></p>
-        <p class="item-time"><%= item.created_at.to_s[0..9]%></p>
+        <p class="item-time"><%= item.created_at.to_s[0..15]%></p>
         <p class="item-content"><%= item.user_comment%></p>
       </div>
     </div>

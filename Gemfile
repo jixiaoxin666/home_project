@@ -37,6 +37,8 @@ gem 'jbuilder', '~> 2.5'
 
 gem 'font-awesome-rails'
 
+gem 'kaminari'
+
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development

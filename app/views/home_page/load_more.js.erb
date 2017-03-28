@@ -1,0 +1,8 @@
+
+$("#message-list").append("<%= escape_javascript( render :partial => "/home_page/list", :locals => {:@messages => @messages}) %>");
+
+<% if @messages.total_pages == @messages.current_page%>
+$(".more-page-wrapper").hide();
+<% else %>
+$(".more-page-wrapper").attr("href", "javascript:ajax_more(<%= @messages.current_page+1%>);").html('<div class="more-page">点击加载更多...</div>');
+<% end %>

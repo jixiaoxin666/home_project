@@ -72,7 +72,7 @@
 	width: 24px;
 	height: 25px;
 	opacity: 0.8;
-	background: transparent url(/assets//arrows.png) no-repeat top left;
+	background: transparent url(/assets/arrows.png) no-repeat top left;
 }
 .dg-container nav span:hover{
 	opacity: 1;

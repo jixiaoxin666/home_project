@@ -31,6 +31,7 @@ background-image: url(/assets/bg.jpg);
 .header .header-left span {
     line-height: 50px;
 }
+
 .header .header-right {
     float: right;
     font-size: 10px;
@@ -60,6 +61,33 @@ background-image: url(/assets/bg.jpg);
     position: relative;
     border: 2px solid #fff;
 }
+
+/*动画 start*/
+@keyframes myshow
+{
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@-moz-keyframes myshow /* Firefox */
+{
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@-webkit-keyframes myshow /* Safari 和 Chrome */
+{
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@-o-keyframes myshow /* Opera */
+{
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+/*动画end*/
 .center-box .center-text {
     width: 50%;
     height: 260px;
@@ -76,6 +104,10 @@ background-image: url(/assets/bg.jpg);
     margin-top: 10%;
     color: #e4d463;
     font-size: 24px;
+    animation: myshow 7s;
+    -moz-animation: myshow 7s;	/* Firefox */
+    -webkit-animation: myshow 7s;	/* Safari 和 Chrome */
+    -o-animation: myshow 7s;
 }
 .center-box .center-center  {
     width: 10%;
@@ -111,6 +143,7 @@ background-image: url(/assets/bg.jpg);
     width: 100%;
     height: 400px;
     overflow: hidden;
+    color: #000;
     background-color: #999999;
 }
 .section2 .triangle-down-bottom {
@@ -168,6 +201,7 @@ background-image: url(/assets/bg.jpg);
     width: 50%;
     margin-left: 25%;
     margin-top: 70px;
+    color: #000;
 }
 .case-title-wrapper .case-title {
     display: inline-block;
@@ -241,15 +275,43 @@ background-image: url(/assets/bg.jpg);
     width: 70%;
     margin-left: 30%;
     position: absolute;
-    top: 140px;
+    top: 300px;
+    /*animation: mymove 1s;*/
 }
 .section4 .case-img2 {
     width: 75%;
     margin-left: 25%;
     position: absolute;
-    top: -110px;
-    /*margin-top: -500px;*/
+    /*top: -110px;*/
+    top: 0;
 }
+
+/*动画 start*/
+@keyframes mymove
+{
+    from {top: 200px;}
+    to {top: 140px;}
+}
+
+@-moz-keyframes mymove /* Firefox */
+{
+    from {top: 100px;}
+    to {top: 140px;}
+}
+
+@-webkit-keyframes mymove /* Safari 和 Chrome */
+{
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@-o-keyframes mymove /* Opera */
+{
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+/*动画end*/
 .section4 .case-specification {
     position: absolute;
     left: 50px;
@@ -312,11 +374,11 @@ background-image: url(/assets/bg.jpg);
 }
 .section6 .img-wrapper .img1{
     margin: 0;
-    transform: rotate(20deg);
+    /*transform: rotate(20deg);*/
 }
 .section6 .img-wrapper .img2{
     margin-right: -50px;
-    transform: rotate(20deg);
+    /*transform: rotate(20deg);*/
 }
 .section6 .img-wrapper .phone{
     float: right;
@@ -338,15 +400,15 @@ background-image: url(/assets/bg.jpg);
 }
 .section6 .img-wrapper .img4{
     margin-right: -100px;
-    transform:rotate(-10deg);
+    /*transform:rotate(-20deg);*/
 }
 .section6 .img-wrapper .img5{
-    margin-right: -200px;
-    transform: rotate(-20deg);
+    margin-right: -150px;
+    /*transform: rotate(-20deg);*/
 }
 .section6 .img-wrapper .img6{
-    margin-right: -200px;
-    transform: rotate(-45deg);
+    margin-right: -150px;
+    /*transform: rotate(-20deg);*/
 }
 .section6 .case-name-desc {
     width: 200px;
@@ -595,11 +657,22 @@ background-image: url(/assets/bg.jpg);
     /*text-align: left;*/
 }
 .section11 .message-list .list-item{
-    padding: 20px 0;
+    padding: 25px 0;
     border-bottom: 1px solid #f4f4f4;
     overflow: hidden;
 }
-
+.section11 .more-page-wrapper {
+    display: block;
+}
+.section11 .more-page-wrapper .more-page {
+    padding-top: 40px;
+    text-align: center;
+    color: #000;
+    font-size: 12px;
+}
+.section11 .list-item:nth-child(2n) {
+    padding-left: 8%;
+}
 .list-item .user-img {
     float: left;
     width: 8%;
@@ -615,7 +688,7 @@ background-image: url(/assets/bg.jpg);
     float: left;
     width: 90%;
     margin-left: 2%;
-    /*text-align: left;*/
+    font-size: 12px;
 }
 .item-wrapper .item-name {
     color: #ff9833;
